@@ -1,0 +1,15 @@
+{
+	"First_Name": "Narang",
+	"Last_Name": "Mitra",
+	"Gender": "male",
+	"DOB": "2011-09-22",
+	"applying_to": "${Institue_id}",
+	"Nationality": "Indian",
+	"Religion": "Hindu",
+	"ContactId": "${Contactid}",
+	"PreparerId": "${Contactid}",
+	"ApplicantType": "Foreigner",
+	"Caste": "General",
+	"handicapped": "yes",
+	"Academic_year": 2021
+}

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="AutoItLibrary" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2021-03-15T10:54:07Z" specversion="2" source="D:\python\Lib\site-packages\AutoItLibrary\__init__.py" lineno="51">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>*AutoItLibrary* is a Robot Framework keyword library wrapper for for the freeware *AutoIt* tool
+(http://www.autoitscript.com/autoit3/index.shtml) using AutoIt's *AutoItX.dll* COM object. The
+*AutoItLibrary* class provides a proxy for the AutoIt keywords callable on the AutoIt COM object and
+provides additional high-level keywords implemented as methods in this class.
+
+In the following documentation on each keyword, the keywords whose documentation is simply
+_method &lt;KeywordName&gt;_ (e.g. "_method ControlClick_") are the native AutoIt keywords.  The detailed
+documentation for these keywords is available in the AutoItX documentation file:
+*AutoItX.chm*.  This file is installed as part of the installation of *AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\AutoItX.chm
+
+In order to discover the control identifiers in a given Windows GUI, AutoIt provides a standalone
+tool called the AutoIt Window Info Tool which is installed as part of the installation of
+*AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\Au3Info.exe
+
+This tool is documented here: http://www.autoitscript.com/autoit3/docs/intro/au3spy.htm</doc>
+<init lineno="76">
+<arguments>
+<arg>TimeOut=60</arg>
+<arg>CaptureScreenOnError=False</arg>
+</arguments>
+<doc>| OutputDir=&lt;path&gt;          | Output directory for captured screenshots. Should set to _${OUTPUTDIR}_ |
+| Timeout=&lt;seconds&gt;         | Default TimeOut value in seconds.                                       |
+|                           | This is used in other methods when their TimeOut parameter is not used. |
+| CaptureScreenOnError=True | Defaults to False.  Set to _${True}_ to capture the PC screen on any    |
+|                           | AutoItLibrary keyword failure.                                          |</doc>
+</init>
+<kw name="Auto It Set Option" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="33">
+<arguments>
+<arg>strOption=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nValue=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method AutoItSetOption</doc>
+</kw>
+<kw name="Block Input" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="38">
+<arguments>
+<arg>nFlag=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method BlockInput</doc>
+</kw>
+<kw name="CD Tray" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="43">
+<arguments>
+<arg>strDrive=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strAction=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method CDTray</doc>
+</kw>
+<kw name="Clip Get" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="48">
+<arguments>
+</arguments>
+<doc>method ClipGet</doc>
+</kw>
+<kw name="Clip Put" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="53">
+<arguments>
+<arg>strClip=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ClipPut</doc>
+</kw>
+<kw name="Control Click" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="58">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strButton=LEFT</arg>
+<arg>nNumClicks=1</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+</arguments>
+<doc>method ControlClick</doc>
+</kw>
+<kw name="Control Command" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="65">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strExtra=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlCommand</doc>
+</kw>
+<kw name="Control Disable" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="72">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlDisable</doc>
+</kw>
+<kw name="Control Enable" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="77">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlEnable</doc>
+</kw>
+<kw name="Control Focus" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="82">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlFocus</doc>
+</kw>
+<kw name="Control Get Focus" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="87">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method ControlGetFocus</doc>
+</kw>
+<kw name="Control Get Handle" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="92">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlGetHandle</doc>
+</kw>
+<kw name="Control Get Pos Height" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="98">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlGetPosHeight</doc>
+</kw>
+<kw name="Control Get Pos Width" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="103">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlGetPosWidth</doc>
+</kw>
+<kw name="Control Get Pos X" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="108">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlGetPosX</doc>
+</kw>
+<kw name="Control Get Pos Y" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="113">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlGetPosY</doc>
+</kw>
+<kw name="Control Get Text" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="118">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlGetText</doc>
+</kw>
+<kw name="Control Hide" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="124">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlHide</doc>
+</kw>
+<kw name="Control List View" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="129">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strExtra1=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strExtra2=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlListView</doc>
+</kw>
+<kw name="Control Move" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="137">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nX=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nWidth=-1</arg>
+<arg>nHeight=-1</arg>
+</arguments>
+<doc>method ControlMove</doc>
+</kw>
+<kw name="Control Send" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="144">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strSendText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nMode=0</arg>
+</arguments>
+<doc>method ControlSend</doc>
+</kw>
+<kw name="Control Set Text" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="150">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControlText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlSetText</doc>
+</kw>
+<kw name="Control Show" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="155">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlShow</doc>
+</kw>
+<kw name="Control Tree View" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="160">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strControl=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strCommand=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strExtra1=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strExtra2=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ControlTreeView</doc>
+</kw>
+<kw name="Drive Map Add" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="168">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strShare=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nFlags=0</arg>
+<arg>strUser=</arg>
+<arg>strPwd=</arg>
+</arguments>
+<doc>method DriveMapAdd</doc>
+</kw>
+<kw name="Drive Map Del" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="174">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method DriveMapDel</doc>
+</kw>
+<kw name="Drive Map Get" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="179">
+<arguments>
+<arg>strDevice=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method DriveMapGet</doc>
+</kw>
+<kw name="Get Active Window Image" lineno="197">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture an image of the active window into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+</kw>
+<kw name="Get Auto It Version" lineno="178">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItX COM object.</doc>
+</kw>
+<kw name="Get Screen Image" lineno="245">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture a full screen image into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+</kw>
+<kw name="Get Version" lineno="169">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItLibrary.</doc>
+</kw>
+<kw name="Ini Delete" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="185">
+<arguments>
+<arg>strFilename=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strSection=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strKey=</arg>
+</arguments>
+<doc>method IniDelete</doc>
+</kw>
+<kw name="Ini Read" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="190">
+<arguments>
+<arg>strFilename=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strSection=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strKey=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strDefault=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method IniRead</doc>
+</kw>
+<kw name="Ini Write" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="196">
+<arguments>
+<arg>strFilename=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strSection=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strKey=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strValue=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method IniWrite</doc>
+</kw>
+<kw name="Init" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="201">
+<arguments>
+</arguments>
+<doc>method Init</doc>
+</kw>
+<kw name="Is Admin" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="205">
+<arguments>
+</arguments>
+<doc>method IsAdmin</doc>
+</kw>
+<kw name="Mouse Click" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="209">
+<arguments>
+<arg>strButton=LEFT</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+<arg>nClicks=1</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseClick</doc>
+</kw>
+<kw name="Mouse Click Drag" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="215">
+<arguments>
+<arg>strButton=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nX1=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nY1=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nX2=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nY2=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseClickDrag</doc>
+</kw>
+<kw name="Mouse Down" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="222">
+<arguments>
+<arg>strButton=LEFT</arg>
+</arguments>
+<doc>method MouseDown</doc>
+</kw>
+<kw name="Mouse Get Cursor" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="227">
+<arguments>
+</arguments>
+<doc>method MouseGetCursor</doc>
+</kw>
+<kw name="Mouse Get Pos X" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="231">
+<arguments>
+</arguments>
+<doc>method MouseGetPosX</doc>
+</kw>
+<kw name="Mouse Get Pos Y" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="235">
+<arguments>
+</arguments>
+<doc>method MouseGetPosY</doc>
+</kw>
+<kw name="Mouse Move" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="239">
+<arguments>
+<arg>nX=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nSpeed=-1</arg>
+</arguments>
+<doc>method MouseMove</doc>
+</kw>
+<kw name="Mouse Up" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="244">
+<arguments>
+<arg>strButton=LEFT</arg>
+</arguments>
+<doc>method MouseUp</doc>
+</kw>
+<kw name="Mouse Wheel" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="249">
+<arguments>
+<arg>strDirection=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nClicks=1</arg>
+</arguments>
+<doc>method MouseWheel</doc>
+</kw>
+<kw name="Opt" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="254">
+<arguments>
+<arg>strOption=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nValue=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method Opt</doc>
+</kw>
+<kw name="Pixel Checksum" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="259">
+<arguments>
+<arg>nLeft=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nTop=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nRight=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nBottom=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nStep=1</arg>
+</arguments>
+<doc>method PixelChecksum</doc>
+</kw>
+<kw name="Pixel Get Color" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="265">
+<arguments>
+<arg>nX=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method PixelGetColor</doc>
+</kw>
+<kw name="Pixel Search" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="270">
+<arguments>
+<arg>nLeft=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nTop=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nRight=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nBottom=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nCol=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nVar=0</arg>
+<arg>nStep=1</arg>
+</arguments>
+<doc>method PixelSearch</doc>
+</kw>
+<kw name="Process Close" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="277">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ProcessClose</doc>
+</kw>
+<kw name="Process Exists" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="282">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ProcessExists</doc>
+</kw>
+<kw name="Process Set Priority" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="287">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nPriority=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method ProcessSetPriority</doc>
+</kw>
+<kw name="Process Wait" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="292">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method ProcessWait</doc>
+</kw>
+<kw name="Process Wait Close" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="297">
+<arguments>
+<arg>strProcess=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method ProcessWaitClose</doc>
+</kw>
+<kw name="Reg Delete Key" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="302">
+<arguments>
+<arg>strKeyname=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RegDeleteKey</doc>
+</kw>
+<kw name="Reg Delete Val" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="307">
+<arguments>
+<arg>strKeyname=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strValuename=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RegDeleteVal</doc>
+</kw>
+<kw name="Reg Enum Key" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="312">
+<arguments>
+<arg>strKeyname=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nInstance=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RegEnumKey</doc>
+</kw>
+<kw name="Reg Enum Val" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="318">
+<arguments>
+<arg>strKeyname=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nInstance=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RegEnumVal</doc>
+</kw>
+<kw name="Reg Read" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="324">
+<arguments>
+<arg>strKeyname=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strValuename=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RegRead</doc>
+</kw>
+<kw name="Reg Write" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="330">
+<arguments>
+<arg>strKeyname=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strValuename=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strType=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strValue=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RegWrite</doc>
+</kw>
+<kw name="Run" lineno="285">
+<arguments>
+<arg>FileName</arg>
+<arg>WorkingDir=</arg>
+<arg>Flag=</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's Run method.
+
+This is required in order to do error code translation into exceptions for Robot Framework.</doc>
+</kw>
+<kw name="Run As Set" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="340">
+<arguments>
+<arg>strUser=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strDomain=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strPassword=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nOptions=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method RunAsSet</doc>
+</kw>
+<kw name="Run Wait" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="345">
+<arguments>
+<arg>strRun=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strDir=</arg>
+<arg>nShowFlags=1</arg>
+</arguments>
+<doc>method RunWait</doc>
+</kw>
+<kw name="Send" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="350">
+<arguments>
+<arg>strSendText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nMode=0</arg>
+</arguments>
+<doc>method Send</doc>
+</kw>
+<kw name="Shutdown" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="355">
+<arguments>
+<arg>nFlags=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method Shutdown</doc>
+</kw>
+<kw name="Statusbar Get Text" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="365">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+<arg>nPart=1</arg>
+</arguments>
+<doc>method StatusbarGetText</doc>
+</kw>
+<kw name="Tool Tip" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="370">
+<arguments>
+<arg>strTip=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nX=-2147483647</arg>
+<arg>nY=-2147483647</arg>
+</arguments>
+<doc>method ToolTip</doc>
+</kw>
+<kw name="Wait For Active Window" lineno="392">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.
+
+Parameters:
+| WindowTitle=&lt;string&gt;  | Title of the application window expected to appear      |
+| [WindowText=&lt;string&gt;] | Optional text on the window expected to appear          |
+| [TimeOut=&lt;seconds&gt;]   | Optional overide to the default timeout set in __init__ |</doc>
+</kw>
+<kw name="Win Activate" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="375">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinActivate</doc>
+</kw>
+<kw name="Win Active" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="380">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinActive</doc>
+</kw>
+<kw name="Win Close" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="385">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinClose</doc>
+</kw>
+<kw name="Win Exists" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="390">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinExists</doc>
+</kw>
+<kw name="Win Get Caret Pos X" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="395">
+<arguments>
+</arguments>
+<doc>method WinGetCaretPosX</doc>
+</kw>
+<kw name="Win Get Caret Pos Y" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="399">
+<arguments>
+</arguments>
+<doc>method WinGetCaretPosY</doc>
+</kw>
+<kw name="Win Get Class List" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="403">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClassList</doc>
+</kw>
+<kw name="Win Get Client Size Height" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="408">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClientSizeHeight</doc>
+</kw>
+<kw name="Win Get Client Size Width" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="413">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetClientSizeWidth</doc>
+</kw>
+<kw name="Win Get Handle" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="418">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetHandle</doc>
+</kw>
+<kw name="Win Get Pos Height" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="423">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosHeight</doc>
+</kw>
+<kw name="Win Get Pos Width" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="428">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosWidth</doc>
+</kw>
+<kw name="Win Get Pos X" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="433">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosX</doc>
+</kw>
+<kw name="Win Get Pos Y" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="438">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetPosY</doc>
+</kw>
+<kw name="Win Get Process" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="443">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetProcess</doc>
+</kw>
+<kw name="Win Get State" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="448">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetState</doc>
+</kw>
+<kw name="Win Get Text" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="453">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetText</doc>
+</kw>
+<kw name="Win Get Title" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="458">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinGetTitle</doc>
+</kw>
+<kw name="Win Kill" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="463">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinKill</doc>
+</kw>
+<kw name="Win List" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="468">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+</arguments>
+<doc>method WinList</doc>
+</kw>
+<kw name="Win Menu Select Item" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="473">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strItem1=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strItem2=</arg>
+<arg>strItem3=</arg>
+<arg>strItem4=</arg>
+<arg>strItem5=</arg>
+<arg>strItem6=</arg>
+<arg>strItem7=</arg>
+<arg>strItem8=</arg>
+</arguments>
+<doc>method WinMenuSelectItem</doc>
+</kw>
+<kw name="Win Minimize All" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="481">
+<arguments>
+</arguments>
+<doc>method WinMinimizeAll</doc>
+</kw>
+<kw name="Win Minimize All Undo" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="485">
+<arguments>
+</arguments>
+<doc>method WinMinimizeAllUndo</doc>
+</kw>
+<kw name="Win Move" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="489">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nX=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nY=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nWidth=-1</arg>
+<arg>nHeight=-1</arg>
+</arguments>
+<doc>method WinMove</doc>
+</kw>
+<kw name="Win Set On Top" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="496">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nFlag=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method WinSetOnTop</doc>
+</kw>
+<kw name="Win Set State" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="501">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nFlags=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method WinSetState</doc>
+</kw>
+<kw name="Win Set Title" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="506">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strNewTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method WinSetTitle</doc>
+</kw>
+<kw name="Win Set Trans" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="511">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>nTrans=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+</arguments>
+<doc>method WinSetTrans</doc>
+</kw>
+<kw name="Win Wait" lineno="317">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWait method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWait_&lt;n&gt;.png.</doc>
+</kw>
+<kw name="Win Wait Active" lineno="342">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitActive method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitActive_&lt;n&gt;.png.</doc>
+</kw>
+<kw name="Win Wait Close" lineno="367">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitClose method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitClose_&lt;n&gt;.png.</doc>
+</kw>
+<kw name="Win Wait Not Active" source="C:\Users\CHROME\AppData\Local\Temp\gen_py\3.8\F8937E53-D444-4E71-9275-35B64210CC3Bx0x1x0.py" lineno="531">
+<arguments>
+<arg>strTitle=&lt;PyOleEmpty object at 0x0252EB90&gt;</arg>
+<arg>strText=</arg>
+<arg>nTimeout=0</arg>
+</arguments>
+<doc>method WinWaitNotActive</doc>
+</kw>
+</keywordspec>

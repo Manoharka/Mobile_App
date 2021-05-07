@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="ExcelLibrary" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2021-03-30T09:45:32Z" specversion="2" source="D:\python\Lib\site-packages\ExcelLibrary.py" lineno="26">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Library for working with Excel documents.
+
+== Dependencies ==
+| robot framework | http://robotframework.org |
+
+== Example ==
+| *Settings* | *Value* |
+| Library    | ExcelLibrary.py |
+| Library    | Collections |
+
+| *Test Cases* | *Action* | *Argument* | *Argument* | *Argument* |
+| Simple |
+|    | Create Excel Document | doc_id=docname1 |
+|    | Write Excel Cell | row_num=1 | col_num=1 | value=text |
+|    | Save Excel Document | filename=file.xlsx |
+|    | Close Current Excel Document |</doc>
+<kw name="Close All Excel Documents" lineno="161">
+<arguments>
+</arguments>
+<doc>Closes all opened documents.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | docname1 |
+| ${doc2}= | Create Excel Document | docname2 |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Close Current Excel Document" lineno="145">
+<arguments>
+</arguments>
+<doc>Closes current document.
+
+*Returns:*
+
+    Closed document identifier.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | docname1 |
+| ${doc2}= | Create Excel Document | docname2 |
+| Close Current Excel Document |</doc>
+</kw>
+<kw name="Create Excel Document" lineno="52">
+<arguments>
+<arg>doc_id: str</arg>
+</arguments>
+<doc>Creates new excel document.
+
+*Args:*
+
+    _doc_id_: document identifier in the cache.
+
+*Returns:*
+
+    Identifier of created document.
+
+*Example:*
+
+| Create Excel Document | doc_id=doc |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Get List Sheet Names" lineno="183">
+<arguments>
+</arguments>
+<doc>Returns a list of sheet names in the current document.
+
+*Returns:*
+
+    List of page names.
+
+*Example:*
+
+| Create Excel Document | doc_id=doc1 |
+| ${sheets}= | Get List Sheet Names |
+| List Should Contain Value | ${sheets} | sheet1 |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Get Sheet" lineno="205">
+<arguments>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Returns a page from the current document.
+
+*Args:*
+
+    _sheet_name_: sheet name.
+
+*Returns:*
+
+    Document's sheet.</doc>
+</kw>
+<kw name="Make List From Excel Sheet" lineno="112">
+<arguments>
+<arg>sheet: Worksheet</arg>
+</arguments>
+<doc>Making list from Excel sheet.
+
+*Args:*
+
+    _sheet_: Excel file sheet.
+
+*Returns:*
+
+    _data_: a list of tuples corresponding to the values of each line of an Excel file.
+*Example:*
+
+| ${excel_data_list}= | Make List From Excel Sheet | sheet1 |</doc>
+</kw>
+<kw name="Open Excel Document" lineno="71">
+<arguments>
+<arg>filename: str</arg>
+<arg>doc_id: str</arg>
+</arguments>
+<doc>Opens xlsx document file.
+
+*Args:*
+
+    _filename_: document name.
+
+    _doc_id_: the identifier for the document that will be opened.
+
+*Returns:*
+
+    Document identifier from the cache.
+
+*Example:*
+
+| Open Excel Document | filename=file.xlsx | doc_id=docid |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Open Excel Document From Stream" lineno="92">
+<arguments>
+<arg>stream: bytes</arg>
+<arg>doc_id: str</arg>
+</arguments>
+<doc>Opens xlsx document from stream.
+
+*Args:*
+
+    _stream_: file-like byte stream object {e.g. from any http request).
+
+    _doc_id_: the identifier for the document that will be opened.
+
+*Returns:*
+
+    Document identifier from the cache.
+
+*Example:*
+
+| Open Excel Document From Stream | stream=${report} | doc_id=report.xlsx |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Read Excel Cell" lineno="218">
+<arguments>
+<arg>row_num: int</arg>
+<arg>col_num: int</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Returns content of a cell.
+
+*Args:*
+
+    _row_num_: row number, starts with 1.
+
+    _col_num_: column number, starts with 1.
+
+    _sheet_name_: sheet name, where placed cell, that need to be read.
+
+*Returns:*
+
+    Content of the cell in the specified column and row.
+
+*Example:*
+
+| Open Excel Document | filename=file1.xlsx | doc_id=doc1 |
+| ${a1}= | Read Excel Cell | row_num=1 | col_num=1 |
+| Should Be Equal As Strings | ${a1} | text |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Read Excel Column" lineno="265">
+<arguments>
+<arg>col_num: int</arg>
+<arg>row_offset: int = 0</arg>
+<arg>max_num: int = 0</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Returns content of a column from the current sheet of the document.
+
+*Args:*
+
+    _col_num_: column number, starts with 1.
+
+    _row_offset_: row indent.
+
+    _max_num_: maximum number of rows to read.
+
+    _sheet_name_: sheet name, where placed column,
+    that need to be read.
+
+*Returns:*
+
+    List, that stores the contents of a row.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | doc_id=docname1 |
+| ${col_data}= | Create List | a1 | a2 | a3 |
+| Write Excel Column | col_num=3 | col_data=${col_data} | sheet_name=${DEFAULT_SHEET_NAME} |
+| ${cd}= | Read Excel Column | col_num=3 | max_num=3 | sheet_name=${DEFAULT_SHEET_NAME}|
+| Lists Should Be Equal | ${col_data} | ${cd} |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Read Excel Row" lineno="238">
+<arguments>
+<arg>row_num: int</arg>
+<arg>col_offset: int = 0</arg>
+<arg>max_num: int = 0</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Returns content of a row from the current sheet of the document.
+
+*Args:*
+
+    _row_num_: row number, starts with 1.
+
+    _col_offset_: column indent.
+
+    _max_num_: maximum number of columns to read.
+
+    _sheet_name_: sheet name, where placed row, that need to be read.
+
+*Returns:*
+
+    List, that stores the contents of a row.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | doc_id=docname1 |
+| ${row_data}= | Create List | t1 | t2 | t3 |
+| Write Excel Row | row_num=5 | row_data=${row_data} | sheet_name=${DEFAULT_SHEET_NAME} |
+| ${rd}= | Read Excel Row  | row_num=5 | max_num=3 | sheet_name=${DEFAULT_SHEET_NAME} |
+| Lists Should Be Equal | ${row_data} | ${rd} |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Save Excel Document" lineno="171">
+<arguments>
+<arg>filename: str</arg>
+</arguments>
+<doc>Saves the current document to disk.
+
+*Args:*
+
+    _filename_: file name to save.
+
+*Example:*
+
+| Create Excel Document | doc_id=doc1 |
+| Save Excel Document | filename=file1.xlsx |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Switch Current Excel Document" lineno="126">
+<arguments>
+<arg>doc_id: str</arg>
+</arguments>
+<doc>Switches current excel document.
+
+*Args:*
+
+    _doc_id_: identifier of the document to switch.
+
+*Returns:*
+
+    Identifier of previous document.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | docname1 |
+| ${doc2}= | Create Excel Document | docname2 |
+| Switch Current Excel Document | ${doc1} |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Write Excel Cell" lineno="293">
+<arguments>
+<arg>row_num: int</arg>
+<arg>col_num: int</arg>
+<arg>value: typing.Any</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Writes value to the cell.
+
+*Args:*
+
+    _row_num_: row number, starts with 1.
+
+    _col_num_: column number, starts with 1.
+
+    _value_: value for writing to a cell.
+
+    _sheet_name_: sheet name for write.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | doc_id=docname1 |
+| Write Excel Cell | row_num=1 | col_num=3 | value=a3 | sheet_name=${DEFAULT_SHEET_NAME} |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Write Excel Column" lineno="341">
+<arguments>
+<arg>col_num: int</arg>
+<arg>col_data: typing.List[typing.Any]</arg>
+<arg>row_offset: int = 0</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Writes the data to a column.
+
+*Args:*
+
+    _col_num_: column number, starts with 1.
+
+    _col_data_: list of values for writing.
+
+    _row_offset_: number of indent rows from start.
+
+    _sheet_name_: sheet name for write.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | doc_id=docname1 |
+| ${col_data}= | Create List | a1 | a2 | a3 |
+| Write Excel Column | col_num=1 | col_data=${col_data} | sheet_name=${DEFAULT_SHEET_NAME} |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Write Excel Row" lineno="310">
+<arguments>
+<arg>row_num: int</arg>
+<arg>row_data: typing.List[typing.Any]</arg>
+<arg>col_offset: int = 0</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Writes a row to the document.
+
+*Args:*
+
+    _row_num_: row number, starts with 1.
+
+    _row_data_: list of values for writing.
+
+    _col_offset_: number of indent columns from start.
+
+    _sheet_name_: sheet name for write.
+
+*Example:*
+
+| ${doc1}= | Create Excel Document | doc_id=docname1 |
+| ${row_data}= | Create List | a1 | a2 | a3 |
+| Write Excel Row | row_num=1 | row_data=${row_data} | sheet_name=${DEFAULT_SHEET_NAME} |
+| Close All Excel Documents |</doc>
+</kw>
+<kw name="Write Excel Rows" lineno="329">
+<arguments>
+<arg>rows_data: typing.List[typing.List[typing.Any]]</arg>
+<arg>rows_offset: int = 0</arg>
+<arg>col_offset: int = 0</arg>
+<arg>sheet_name: str = None</arg>
+</arguments>
+<doc>Writes a list of rows to the document.
+
+*Args:*
+
+    _rows_data_: list of rows for writing.
+
+    _rows_offset_: number of indent rows from start.
+
+    _col_offset_: number of indent columns from start.
+
+    _sheet_name_: sheet name for write.</doc>
+</kw>
+</keywordspec>
